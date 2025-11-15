@@ -5,7 +5,7 @@ const AdminBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    axios.get("https://resort-backend-x8mc.onrender.com/api/bookings")
+    axios.get("https://resort-backend-x8mc.onrender.com/bookings")
       .then(res => setBookings(res.data))
       .catch(err => console.log(err));
   }, []);

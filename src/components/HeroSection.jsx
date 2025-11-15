@@ -30,7 +30,7 @@ const HeroSection = () => {
   setLoading(true);
 
   try {
-    const res = await fetch("https://resort-backend-x8mc.onrender.com/api/bookings", {
+    const res = await fetch("https://resort-backend-x8mc.onrender.com/bookings", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
